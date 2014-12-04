@@ -1,0 +1,57 @@
+<!doctype html>
+<!--[if IE 6]>
+<html id="ie6" dir="ltr" lang="de-DE">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" dir="ltr" lang="de-DE">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" dir="ltr" lang="de-DE">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="de-DE">
+<!--<![endif]-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Test Box2D</title>
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="/styles/main.css">
+        <!-- endbuild -->
+        <!-- build:js scripts/vendor/modernizr.js -->
+        <script src="/bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
+    </head>
+    <body>
+        <div id="fps"></div>
+        <canvas id="panel" width="800" height="480"></canvas>
+
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="/bower_components/jquery/jquery.js"></script>
+        <script src="/bower_components/lodash/dist/lodash.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- build:js scripts/main.js -->
+        <script data-main="scripts/main" src="/bower_components/requirejs/require.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js games/libs/games-test.js -->
+        <!-- gamesLibs -->
+        <script src="/games/libs/src/core.js"></script>
+        <script src="/games/libs/src/easeljs-0.5.0.min.js"></script>
+        <script src="/games/libs/src/tweenjs-0.3.0.min.js"></script>
+        <script src="/games/libs/src/easystar-0.1.0.min.js"></script>
+        <script src="/games/libs/src/movieclip-0.5.0.min.js"></script>
+        <script src="/games/libs/src/soundjs-0.3.0.min.js"></script>
+        <script src="/games/libs/src/preloadjs-0.2.0.min.js"></script>
+        <script src="/games/libs/src/box2dweb.js"></script>
+        <!-- end gamesLibs -->
+        <!-- gameApp -->
+        <script type="text/javascript" src="test-box2d.js"></script>
+        <!-- end gameInit -->
+        <!-- endbuild -->
+    </body>
+</html>

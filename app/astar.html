@@ -1,0 +1,86 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>webapp</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+        <!-- build:js scripts/vendor/modernizr.js -->
+        <script src="bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="container">
+            <header class="page-header">
+                <h1><a href="/"><span class="glyphicon glyphicon-tower"></span> JavaScript Game <small>developer version 1.0</small></a></h1>
+            </header>
+            
+
+
+<nav class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+        <ul class="nav navbar-nav">
+            <li class="select-map">
+                <select id="maps" class="form-control input-sm">
+                    <option value="map-01.json">map-01.json</option>
+                    <option value="map.json">map.json</option>
+                    <option value="test-map.json">test-map.json</option>
+                    <option value="test1.json">test1.json</option>
+                </select>
+            </li>
+            <li><a href="test.html">box2d</a></li>
+            <li><a href="astar.html">test A*</a></li>
+        </ul>
+        <span class="fps">Loading...</span>
+    </div>
+</nav>
+
+
+<div class="row marketing" id="canvas-panel-astar"></div>
+
+            <div class="footer"></div>
+        </div>
+
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="bower_components/jquery/jquery.js"></script>
+        <script src="bower_components/lodash/dist/lodash.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- build:js games/libs/games.js -->
+        <!-- gamesLibs -->
+        <script src="games/libs/src/core.js"></script>
+        <script src="games/libs/src/easeljs-0.5.0.min.js"></script>
+        <script src="games/libs/src/tweenjs-0.3.0.min.js"></script>
+        <script src="games/libs/src/easystar-0.1.0.min.js"></script>
+        <script src="games/libs/src/movieclip-0.5.0.min.js"></script>
+        <script src="games/libs/src/soundjs-0.3.0.min.js"></script>
+        <script src="games/libs/src/preloadjs-0.2.0.min.js"></script>
+        <script src="games/libs/src/box2dweb.js"></script>
+        <!-- end gamesLibs -->
+        <!-- gameApp -->
+        <script src="games/libs/app/ge.js"></script>
+        <script src="games/libs/app/map.js"></script>
+        <!-- end gameApp -->
+        <!-- gameInit -->
+        <script src="games/libs/app/start.js"></script>
+        <!-- end gameInit -->
+        <!-- test script -->
+        <script src="games/libs/app/_test/test-box2d.js"></script>
+        <script src="games/libs/app/_test/test-astar.js"></script>
+        <!-- endbuild -->
+
+    </body>
+</html>

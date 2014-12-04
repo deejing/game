@@ -1,0 +1,16 @@
+.DS_Store
+.sass-cache
+node_modules
+RPG.sublime-project
+RPG.sublime-workspace
+node_modules
+dist
+.tmp
+.sass-cache
+app/bower_components
+app/games/gfx/field
+app/games/fields
+assets/css/style.css
+./src
+*.tmx
+*.tsx
